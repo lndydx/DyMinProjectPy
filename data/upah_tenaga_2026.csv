@@ -1,0 +1,62 @@
+kode,kategori,uraian,satuan,harga_satuan,tahun,kota,sumber
+8.1.02.02.01.0016,upah_tenaga,Pekerja,Orang/Jam,19000,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Pekerja,Orang/Hari,133000,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang,Orang/Jam,22500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang,Orang/Hari,157500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Alumunium,Orang/Jam,22500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Alumunium,Orang/Hari,157500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Batu,Orang/Jam,22500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Batu,Orang/Hari,157500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Besi,Orang/Jam,22500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Besi,Orang/Hari,157500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Besi Konstruksi,Orang/Jam,22500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Besi Konstruksi,Orang/Hari,157500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Besi Profil,Orang/Jam,22500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Besi Profil,Orang/Hari,157500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Cat,Orang/Jam,22500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Cat,Orang/Hari,157500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Ereksi,Orang/Jam,22500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Ereksi,Orang/Hari,157500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Kayu,Orang/Jam,22500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Kayu,Orang/Hari,157500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Las,Orang/Jam,22500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Las,Orang/Hari,157500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Las Konstruksi,Orang/Jam,22500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Las Konstruksi,Orang/Hari,157500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Listrik,Orang/Jam,22500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Listrik,Orang/Hari,157500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Pemelihara Taman,Orang/Jam,22500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Pemelihara Taman,Orang/Hari,157500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Pipa,Orang/Jam,22500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Pipa,Orang/Hari,157500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Tanam,Orang/Jam,22500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Tanam,Orang/Hari,157500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Tembok,Orang/Jam,22500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Tembok,Orang/Hari,157500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Vibrator,Orang/Jam,22500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Tukang Vibrator,Orang/Hari,157500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Kepala Tukang,Orang/Jam,24600,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Kepala Tukang,Orang/Hari,172200,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Mandor,Orang/Jam,25900,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Mandor,Orang/Hari,181300,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Juru Ukur,Orang/Jam,23000,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Juru Ukur,Orang/Hari,161000,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Juru Bor,Orang/Hari,161000,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Pembantu Juru Ukur,Orang/Jam,19500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Pembantu Juru Ukur,Orang/Hari,161000,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Pembantu Juru Bor,Orang/Jam,19500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Pembantu Juru Bor,Orang/Hari,136500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Operator,Orang/Jam,23000,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Operator Alat Berat,Orang/Hari,161000,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Pembantu Operator,Orang/Jam,22500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Pembantu Operator,Orang/Hari,157500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Kernet,Orang/Hari,136500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Ahli Pengukuran,M1,5000,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Pengelasan,Cm,4902,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Driver Hammer 1 Ton,Jam,150000,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Driver Hammer 2 Ton,Jam,150000,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Driver Hammer 3 Ton,Jam,150000,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Petugas K3 Konstruksi,Orang/Bulan,3000000,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Petugas Pengatur Lalu Lintas,Orang/Hari,130000,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Upah Cutting Laser ACP,Ls,220000,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
+8.1.02.02.01.0016,upah_tenaga,Upah Las ACP,Ls,157500,2026,Kabupaten Bandung,Perbup No.55 Tahun 2025
