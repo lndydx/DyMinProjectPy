@@ -1,2 +1,2 @@
-# my_mini_project
+# My Mini Project
 Mini Project
