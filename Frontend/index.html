@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atmoscope</title>
+
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ── BACKGROUND LAYERS ────────────────────────── -->
+    <div id="bgGradient"></div>
+    <canvas id="bgCanvas"></canvas>
+
+    <!-- ── NAVBAR ───────────────────────────────────── -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fa-solid fa-moon"></i> Atmoscope
+        </div>
+        <button id="themeToggle" class="theme-btn">
+            <i class="fa-solid fa-sun"></i>
+        </button>
+    </nav>
+
+    <!-- ── HERO ─────────────────────────────────────── -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 id="heroTitle">Eksplore The Skies In Your City</h1>
+            <p id="heroSub">Cuaca harian & kondisi terbaik untuk observasi astronomi</p>
+            <div class="search-box">
+                <select id="citySelect">
+                    <option value="">-- Pilih Kota --</option>
+                </select>
+                <button id="searchBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i> Cek Sekarang
+                </button>
+            </div>
+        </div>
+
+        <!-- Weather condition badge -->
+        <div id="conditionBadge" class="condition-badge hidden">
+            <span id="conditionIcon"></span>
+            <span id="conditionText"></span>
+        </div>
+    </section>
+
+    <!-- ── LOADING ───────────────────────────────────── -->
+    <div id="loading" class="loading hidden">
+        <i class="fa-solid fa-spinner fa-spin"></i> Mengambil data...
+    </div>
+
+    <!-- ── DASHBOARD ─────────────────────────────────── -->
+    <main id="dashboard" class="dashboard hidden">
+
+        <!-- City header -->
+        <div class="city-header">
+            <h2 id="cityTitle"><i class="fa-solid fa-location-dot"></i> --</h2>
+            <span id="lastUpdate" class="last-update"></span>
+        </div>
+
+        <!-- TAB SWITCHER -->
+        <div class="tab-switcher">
+            <button class="tab-btn active" data-tab="weather">
+                <i class="fa-solid fa-sun"></i> Cuaca Harian
+            </button>
+            <button class="tab-btn" data-tab="astro">
+                <i class="fa-solid fa-moon"></i> Astronomi
+            </button>
+        </div>
+
+        <!-- ══ TAB: CUACA ══════════════════════════════── -->
+        <div id="tabWeather" class="tab-content active">
+
+            <!-- 4 Cards -->
+            <div class="cards-row">
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-temperature-half"></i></div>
+                    <div class="card-label">Suhu Sekarang</div>
+                    <div class="card-value" id="tempVal">--°C</div>
+                    <div class="card-sub" id="tempFeel">Terasa seperti --°C</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-droplet"></i></div>
+                    <div class="card-label">Kelembaban</div>
+                    <div class="card-value" id="humidVal">--%</div>
+                    <div class="card-sub">Relative Humidity</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-wind"></i></div>
+                    <div class="card-label">Kecepatan Angin</div>
+                    <div class="card-value" id="windVal">-- km/h</div>
+                    <div class="card-sub" id="windDir">--</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-cloud-rain"></i></div>
+                    <div class="card-label">Curah Hujan</div>
+                    <div class="card-value" id="rainVal">-- mm</div>
+                    <div class="card-sub">Per jam</div>
+                </div>
+            </div>
+
+            <!-- Hourly Chart -->
+            <div class="chart-card">
+                <h2><i class="fa-solid fa-clock"></i> Cuaca Hari Ini per Jam</h2>
+                <canvas id="hourlyChart"></canvas>
+            </div>
+
+            <!-- 7 Day Forecast -->
+            <div class="chart-card">
+                <h2><i class="fa-solid fa-calendar-week"></i> Forecast 7 Hari</h2>
+                <div id="weekForecast" class="week-forecast"></div>
+            </div>
+
+        </div>
+
+        <!-- ══ TAB: ASTRONOMI ══════════════════════════── -->
+        <div id="tabAstro" class="tab-content">
+
+            <!-- 3 Cards -->
+            <div class="cards-row">
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-moon"></i></div>
+                    <div class="card-label">Moon Phase</div>
+                    <div class="card-value" id="moonPhaseVal">--%</div>
+                    <div class="card-sub" id="moonPhaseName">--</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-star"></i></div>
+                    <div class="card-label">Jam Terbaik Malam Ini</div>
+                    <div class="card-value" id="bestHourVal">--</div>
+                    <div class="card-sub" id="bestHourScore">Sky Score --</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-cloud"></i></div>
+                    <div class="card-label">Cloud Cover</div>
+                    <div class="card-value" id="cloudVal">--%</div>
+                    <div class="card-sub">Tutupan awan</div>
+                </div>
+            </div>
+
+            <!-- Sky Score Chart -->
+            <div class="chart-card">
+                <h2><i class="fa-solid fa-chart-line"></i> Sky Score 7 Hari ke Depan</h2>
+                <canvas id="skyChart"></canvas>
+            </div>
+
+            <!-- Best Hours + Moon side by side -->
+            <div class="two-col">
+
+                <div class="chart-card">
+                    <h2><i class="fa-solid fa-clock"></i> Top 5 Jam Terbaik Observasi</h2>
+                    <div id="bestHoursList" class="best-hours-list"></div>
+                </div>
+
+                <div class="chart-card moon-section">
+                    <h2><i class="fa-solid fa-moon"></i> Fase Bulan</h2>
+                    <div id="moonDaySelector" class="moon-day-selector"></div>
+                    
+                    <div class="moon-visual">
+                        <canvas id="moonCanvas" width="120" height="120"></canvas>
+                        <div class="moon-info">
+                            <div class="moon-stat"><span>Illuminasi</span><strong id="moonIllum">--%</strong></div>
+                            <div class="moon-stat"><span>Fase</span><strong id="moonFaseName">--</strong></div>
+                            <div class="moon-stat"><span>Pengaruh</span><strong id="moonEffect">--</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Astronomy Events -->
+            <div class="chart-card">
+                <h2><i class="fa-solid fa-meteor"></i> Fenomena Astronomi Mendatang</h2>
+                <div id="astronomyList" class="astronomy-list"></div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="background.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
